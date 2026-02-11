@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles_popup_desktop.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>popup desktop</title>
+</head>
+<body>
+  <div class="popup_content">
+    <div class="popup_header">
+      <h2 class="heading" >Добавление фильма</h2>
+      <button class="close-btn">
+        <img class="popup_close" src="public/popup_close.png" alt="Закрыть">
+      </button>
+    </div>
+    <div class="popup_form">
+      <div class="film_form">
+        <label>Название фильма</label>
+        <input type="text" class="input-base" placeholder="Например, «Гражданин Кейн»">
+      </div>
+      <div class="film_form">
+        <label>Продолжительность фильма (мин.)</label>
+        <input type="text" class="input-base" name="film-duration">
+      </div>
+      <div class="film_form">
+        <label>Описание фильма</label>
+        <textarea class="input-base description" name="film-description"></textarea>
+      </div>
+      <div class="film_form">
+        <label>Страна</label>
+        <input type="text" class="input-base" name="film-country">
+      </div>
+    </div>
+    <div class="popup_buttons">
+      <input type="submit" class="popup_buttons_style" value="добавить фильм">
+      <input type="submit" class="popup_buttons_style" value="загрузить постер">
+      <button class="popup_buttons_style cancell">Отменить</button>
+    </div>
+  </div>
+</body>
+</html>

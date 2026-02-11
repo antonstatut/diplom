@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+body {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('public/backgroundpopup.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.popup_content {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  width: 100%;
+  margin: 120px auto;
+  padding-bottom: 35px;
+  gap: 34px;
+  background-color: #EAE9EBF2;
+  opacity: 0.95;
+}
+.popup_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 42px 14px 42px;
+  background-color: #63536C;
+}
+.heading {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 700;
+  vertical-align: middle;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.close-btn {
+  width: 22px;
+  height: 22px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+.popup_close {
+  width: 22px;
+  height: 22px;
+}
+.popup_form {
+ display: flex;
+ flex-direction: column;
+ margin: 0 auto;
+ gap: 8px;
+ padding-bottom: 8px;
+ max-width: 750px;
+ width: 100%;
+}
+.film_form {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  vertical-align: middle;
+  color: #848484;
+}
+.input-base {
+  border: 1px solid #B7B7B7;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  vertical-align: middle;
+  line-height: 100%;
+  box-sizing: border-box;
+}
+.description {
+  min-height: 80px;
+  resize: none;
+  font-family: inherit;
+  font-size: 16px;
+}
+.popup_buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 14px;
+}
+.popup_buttons_style {
+  padding: 11.2px 32p 11.9px 32px;
+  background-color: #16A6AF;
+  color: #FFFFFF;
+  width: 200px;
+  height: 40px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 14px;
+  line-height: 16px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.cancell {
+  background-color: #FFFFFF;
+  color: #63536C;
+  width: 139px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .popup_buttons {
+    flex-direction: column;
+  }
+  .cancell {
+    width: 200px;
+  }
+}
+@media (max-height: 600px) {
+  .popup_content {
+    margin: 14px auto;
+  }
+}
