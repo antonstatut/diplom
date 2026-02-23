@@ -4,10 +4,11 @@
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
-  background-image: url('public/backgrondImage.jpg');
+  background-image: url('../../public/backgrondImage.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -98,7 +99,7 @@ main {
   gap: 4px;
   display: flex;
   flex-direction: column;
-  background-image: url(public/screen.png);
+  background-image: url(../../public/screen.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 284px;

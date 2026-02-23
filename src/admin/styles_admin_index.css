@@ -9,14 +9,15 @@ ul {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 button {
   cursor: pointer;
 }
-body {
+.main_admin_index {
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('public/backgroundpopup.jpg');
+    url('../../public/backgroundpopup.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -106,7 +107,7 @@ body {
 }
 .section_header::after {
   content: "";
-  background-image: url('public/admin_section_after.png');
+  background-image: url('../../public/admin_section_after.png');
   width: 24px;
   height: 16px;
   background-size: contain;
@@ -215,7 +216,7 @@ body {
 }
 .item_hall_button::before {
   content: "";
-  background-image: url('public/basket.png');
+  background-image: url('../../public/basket.png');
   background-size: cover;
   position: absolute;
   width: 12px;
@@ -375,7 +376,7 @@ body {
 .vip_chair {
   background-color: #B0D6D8;
   border: 1px solid #0A828A;
-  background-image: url("public/vip_chair.png");
+  background-image: url("../../public/vip_chair.png");
   background-repeat: repeat;
 }
 .conf_step_hall_title {

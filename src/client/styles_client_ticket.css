@@ -4,9 +4,11 @@
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
+
 body {
-  background-image: url('public/backgrondImage.jpg');
+  background-image: url('../../public/backgrondImage.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -49,7 +51,7 @@ main {
 }
 .ticket_header::before {
   content: "";
-  background-image: url(public/before_ticket.png);
+  background-image: url(../../public/before_ticket.png);
   background-repeat: repeat;
   height: 6px;
   display: block;
@@ -61,7 +63,7 @@ main {
 }
 .ticket_header::after {
   content: "";
-  background-image: url(public/after_ticket.png);
+  background-image: url(../../public/after_ticket.png);
   background-repeat: repeat;
   height: 6px;
   display: block;
@@ -73,7 +75,7 @@ main {
 }
 .ticket_main::before {
   content: "";
-  background-image: url(public/before_ticket.png);
+  background-image: url(../../public/before_ticket.png);
   background-repeat: repeat;
   height: 6px;
   display: block;
@@ -85,7 +87,7 @@ main {
 }
 .ticket_main::after {
   content: "";
-  background-image: url(public/after_ticket.png);
+  background-image: url(../../public/after_ticket.png);
   background-repeat: repeat;
   height: 6px;
   display: block;
@@ -114,21 +116,6 @@ main {
   flex-direction: column;
   gap: 10px;
 }
-.booking_code {
-  display: inline-block;
-  padding: 11.2px 57px 11.9px 57px;
-  background-color: #16A6AF;
-  border-radius: 3px;
-  color: #FFFFFF;
-  border: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  height: 40px;
-  width: 344px;
-  margin: 0 auto;
-}
 .ticket_hint {
   font-size: 14px;
   line-height: 16px;
@@ -143,4 +130,15 @@ main {
   line-height: 18.4px;
   font-weight: 400;
   vertical-align: middle;
+}
+.qrcode {
+  margin-top: 10px;
+  margin-bottom: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.img_qrcode {
+  max-width: 200px;
+  max-height: 200px;
 }
