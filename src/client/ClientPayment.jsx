@@ -6,7 +6,7 @@ export default function ClientPayment() {
   return (
     <main>
       <div className="Header">
-        <Link to="/client">
+        <Link to="/">
         <p className="header_text">Идём<span className="header_text_v">в</span>кино</p>
         </Link>
       </div>
