@@ -1,156 +1,158 @@
-import './styles_client_hall.css';
+import s from './styles_client_hall.module.css';
 import { Routes, Route, Link } from "react-router-dom"
 
 export default function ClientHall() {
 
   return (
-    <main>
-      <div className="Header">
-        <Link to="/">
-        <p className="header_text">Идём<span className="header_text_v">в</span>кино</p>
-        </Link>
-      </div>
-      <div className="Main">
-        <div className="session_info">
-          <h2 className="ticket_info">Звёздные войны XXIII: Атака клонированных клонов</h2>
-          <p className="session_time">Начало сеанса: 18:30</p>
-          <p className="ticket_info">Зал 1</p>
+    <div className={s.body_container}>
+      <main>
+        <div className={s.Header}>
+          <Link to="/">
+            <p className={s.header_text}>Идём<span className={s.header_text_v}>в</span>кино</p>
+          </Link>
         </div>
-        <div className="buying_scheme">
-          <div className="buying_scheme_wrapper">
-            <div className="buying_scheme_container">
-              <div className="buying_scheme_row">
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
+        <div className={s.Main}>
+          <div className={s.session_info}>
+            <h2 className={s.ticket_info}>Звёздные войны XXIII: Атака клонированных клонов</h2>
+            <p className={s.session_time}>Начало сеанса: 18:30</p>
+            <p className={s.ticket_info}>Зал 1</p>
+          </div>
+          <div className={s.buying_scheme}>
+            <div className={s.buying_scheme_wrapper}>
+              <div className={s.buying_scheme_container}>
+                <div className={s.buying_scheme_row}>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                </div>
+                <div className={s.buying_scheme_row}>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                </div>
+                <div className={s.buying_scheme_row}>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                </div>
+                <div className={s.buying_scheme_row}>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.vip}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.vip}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                </div>
+                <div className={s.buying_scheme_row}>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.vip}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.vip}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.vip}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.vip}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                </div>
+                <div className={s.buying_scheme_row}>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.vip}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                </div>
+                <div className={s.buying_scheme_row}>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.vip}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.vip}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                </div>
+                <div className={s.buying_scheme_row}>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.selected}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.selected}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                </div>
+                <div className={s.buying_scheme_row}>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                </div>
+                <div className={s.buying_scheme_row}>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                </div>
               </div>
-              <div className="buying_scheme_row">
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
+            </div>
+            <div className={s.buying_scheme_legend}>
+              <div className={s.free_space}>
+                <div className={s.space_info}>
+                  <span className={s.buying_scheme_space + ' ' + s.free}></span>
+                  <p className={s.text_price}>Свободно (250руб)</p>
+                </div>
+                <div className={s.space_info}>
+                  <span className={s.buying_scheme_space + ' ' + s.vip}></span>
+                  <p className={s.text_price}>Свободно VIP(350руб)</p>
+                </div>
               </div>
-              <div className="buying_scheme_row">
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-              </div>
-              <div className="buying_scheme_row">
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space vip"></span>
-                <span className="buying_scheme_space vip"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-              </div>
-              <div className="buying_scheme_row">
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space vip"></span>
-                <span className="buying_scheme_space vip"></span>
-                <span className="buying_scheme_space vip"></span>
-                <span className="buying_scheme_space vip"></span>
-                <span className="buying_scheme_space free"></span>
-              </div>
-              <div className="buying_scheme_row">
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space vip"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space free"></span>
-              </div>
-              <div className="buying_scheme_row">
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space vip"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space vip"></span>
-                <span className="buying_scheme_space free"></span>
-              </div>
-              <div className="buying_scheme_row">
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space selected"></span>
-                <span className="buying_scheme_space selected"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-              </div>
-              <div className="buying_scheme_row">
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-              </div>
-              <div className="buying_scheme_row">
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
-                <span className="buying_scheme_space free"></span>
+              <div className={s.busy_space}>
+                <div className={s.space_info}>
+                  <span className={s.buying_scheme_space}></span>
+                  <p className={s.text_price}>Занято</p>
+                </div>
+                <div className={s.space_info}>
+                  <span className={s.buying_scheme_space + ' ' + s.selected}></span>
+                  <p className={s.text_price}>Выбрано</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="buying_scheme_legend">
-            <div className="free_space">
-              <div className="space_info">
-                <span className="buying_scheme_space free"></span>
-                <p className="text_price">Свободно (250руб)</p>
-              </div>
-              <div className="space_info">
-                <span className="buying_scheme_space vip"></span>
-                <p className="text_price">Свободно VIP(350руб)</p>
-              </div>
-            </div>
-            <div className="busy_space">
-              <div className="space_info">
-                <span className="buying_scheme_space"></span>
-                <p className="text_price">Занято</p>
-              </div>
-              <div className="space_info">
-                <span className="buying_scheme_space selected"></span>
-                <p className="text_price">Выбрано</p>
-              </div>
-            </div>
+          <div className={s.client_hall_button}>
+            <button className={s.reserved_button}><Link to="/client/payment">Забронировать</Link></button>
           </div>
         </div>
-        <div className="client_hall_button">
-          <button className="reserved_button"><Link to="/client/payment">Забронировать</Link></button>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
   )
 }

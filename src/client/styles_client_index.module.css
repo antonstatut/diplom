@@ -1,26 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-body {
+.body_container {
   background-image: url('/backgrondImage.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: 'Roboto', sans-serif;
-  max-width: 1600px;
+  width: 100%;
+  height: 100%;
   min-height: 100vh;
-  margin: 0 auto;
 }
+
 main {
   max-width: 990px;
   width: 100%;
   margin: 0 auto;
 }
+
 .header_button {
   width: 71px;
   height: 40px;
@@ -35,12 +28,14 @@ main {
   line-height: 16px;
   vertical-align: middle;
 }
+
 .Header {
   display: flex;
   justify-content: space-between;
   padding: 12px;
   box-sizing: border-box;
 }
+
 .header_text {
   font-size: 34px;
   line-height: 39px;
@@ -49,20 +44,24 @@ main {
   font-weight: 900;
   color: #FFFFFF;
 }
+
 .header_text_v {
   font-weight: 100;
 }
+
 .Nav {
   padding-bottom: 10px;
   max-width: 990px;
   margin-bottom: 30px;
 }
+
 .nav_list {
   list-style-type: none;
   display: flex;
   align-items: center;
   gap: 1px;
 }
+
 .nav_list_item {
   border-radius: 2px;
   background-color: #FFFFFF;
@@ -77,10 +76,12 @@ main {
   box-sizing: border-box;
   color: black;
 }
+
 .nav_list_item:nth-child(n+2) {
   display: flex;
   flex-direction: column;
 }
+
 .nav_list_item_active {
   width: 241px;
   height: 52px;
@@ -88,12 +89,15 @@ main {
   font-weight: 700;
   font-size: 15px;
 }
+
 .day_off {
   color: red;
 }
+
 .today::before {
   content: "Сегодня ";
 }
+
 .nav_list_item_change {
   border-radius: 2px;
   background-color: #FFFFFF;
@@ -109,11 +113,13 @@ main {
   box-sizing: border-box;
   color: black;
 }
+
 .Main {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .Movie {
   display: flex;
   flex-direction: column;
@@ -125,13 +131,16 @@ main {
   padding: 15px;
   box-sizing: border-box;
 }
+
 .poster {
   width: 125px;
   height: 175px;
 }
+
 .movie_poster {
   position: relative;
 }
+
 .movie_poster::after {
   content: "";
   position: absolute;
@@ -141,15 +150,18 @@ main {
   border-left: 6.4px;
   background-color: #393939;
 }
+
 .movie_description {
   display: flex;
   flex-direction: column;
   padding-left: 15px;
   gap: 10px;
 }
+
 .movie_info {
   display: flex;
 }
+
 .movie_data {
   display: flex;
   gap: 2.38px;
@@ -157,27 +169,32 @@ main {
   font-size: 14px;
   line-height: 16px;
 }
+
 .movie_heading {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
 }
+
 .movie__synopsis {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 }
+
 .movie_seances_hall {
   display: flex;
   flex-direction: column;
   gap: 7px;
   margin-bottom: 20px;
 }
+
 .movie_seances_heading {
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
 }
+
 .movie_time_list {
   list-style-type: none;
   display: flex;
@@ -185,6 +202,7 @@ main {
   gap: 4px;
   flex-wrap: wrap;
 }
+
 .movie_time_item {
   box-sizing: border-box;
   width: 53px;
@@ -194,14 +212,17 @@ main {
   background-color: #FFFFFF;
   text-align: center;
 }
+
 @media (min-width: 320px) and (max-width: 768px) {
   .nav_list_item {
     padding: 10px;
   }
+
   .nav_list_item_active {
     padding: 11px;
   }
+
   .movie_poster::after {
-  background-color: #772720;
+    background-color: #772720;
   }
 }

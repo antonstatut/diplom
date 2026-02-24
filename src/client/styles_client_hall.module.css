@@ -1,33 +1,26 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-body {
+.body_container {
   background-image: url('/backgrondImage.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: 'Roboto', sans-serif;
-  max-width: 1600px;
+  height: 100%;
+  width: 100%;
   min-height: 100vh;
-  margin: 0 auto;
 }
+
 main {
   max-width: 990px;
   width: 100%;
   margin: 0 auto;
 }
+
 .Header {
   display: flex;
   justify-content: space-between;
   padding: 14px;
   box-sizing: border-box;
 }
+
 .header_text {
   font-size: 34px;
   line-height: 39px;
@@ -36,20 +29,24 @@ main {
   font-weight: 900;
   color: #FFFFFF;
 }
+
 .header_text_v {
   font-weight: 100;
 }
+
 .Main {
   display: flex;
   flex-direction: column;
   border-radius: 2px;
 }
+
 .client_hall_button {
   display: flex;
   justify-content: center;
   background-color: #F1EBE6F2;
   opacity: 0.95;
 }
+
 .reserved_button {
   width: 232px;
   height: 40px;
@@ -66,18 +63,21 @@ main {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .ticket_info {
   font-size: 16px;
   line-height: 18.4px;
   font-weight: 700;
   vertical-align: middle;
 }
+
 .session_time {
   font-size: 14px;
   line-height: 16px;
   font-weight: 300;
   vertical-align: middle;
 }
+
 .session_info {
   display: flex;
   flex-direction: column;
@@ -87,6 +87,7 @@ main {
   background-color: #F1EBE6F2;
   opacity: 0.95;
 }
+
 .buying_scheme {
   padding: 15px 30px 15px 30px;
   background-color: #171D24;
@@ -94,6 +95,7 @@ main {
   justify-content: center;
   flex-direction: column;
 }
+
 .buying_scheme_container {
   padding-top: 30px;
   gap: 4px;
@@ -105,23 +107,27 @@ main {
   width: 284px;
   height: 266px;
 }
+
 .buying_scheme_legend {
   padding-top: 30px;
   display: flex;
   justify-content: center;
 }
+
 .free_space {
   display: flex;
   flex-direction: column;
   min-width: 184.1px;
   gap: 10px;
 }
+
 .busy_space {
   display: flex;
   flex-direction: column;
   min-width: 81.06px;
   gap: 10px;
 }
+
 .text_price {
   font-size: 14px;
   line-height: 16px;
@@ -130,39 +136,49 @@ main {
   color: #FFFFFF;
   margin-left: 3px;
 }
+
 .buying_scheme_space {
   width: 20px;
   height: 20px;
   border-radius: 4px;
   border: 1px solid #525252;
 }
+
 .vip {
   background-color: #F9953A;
 }
+
 .free {
   background-color: #FFFFFF;
 }
+
 .selected {
   background-color: #25C4CE;
   filter: blur(1px);
 }
+
 .space_info {
   display: flex;
   align-items: center;
 }
+
 .buying_scheme_row {
   display: flex;
   gap: 4px;
 }
-.buying_scheme_row:nth-child(1){
+
+.buying_scheme_row:nth-child(1) {
   justify-content: center;
 }
-.buying_scheme_row:nth-child(2){
+
+.buying_scheme_row:nth-child(2) {
   justify-content: center;
 }
-.buying_scheme_row:nth-child(3){
+
+.buying_scheme_row:nth-child(3) {
   padding-left: 25.5px;
 }
+
 .buying_scheme_wrapper {
   display: flex;
   justify-content: center;

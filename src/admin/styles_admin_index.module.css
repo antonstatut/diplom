@@ -1,31 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-ul {
-  list-style-type: none;
-  margin: 0;           
-  padding: 0;           
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-button {
-  cursor: pointer;
-}
-.main_admin_index {
-  background-image: 
+.body_container {
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('/backgroundpopup.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: 'Roboto', sans-serif;
-  max-width: 1600px;
+  height: 100%;
+  width: 100%;
   min-height: 100vh;
-  margin: 0 auto;
 }
+
 .main_container {
   display: flex;
   flex-direction: column;
@@ -33,11 +17,13 @@ button {
   width: 100%;
   margin: 0px auto;
 }
+
 .admin_header {
   padding: 35px 42px 35px 104px;
   height: 120px;
   box-sizing: border-box;
 }
+
 .header_text {
   font-size: 34px;
   line-height: 39px;
@@ -47,9 +33,11 @@ button {
   color: #FFFFFF;
   letter-spacing: 0;
 }
+
 .header_text_v {
   font-weight: 100;
 }
+
 .header_text_admin {
   font-size: 10px;
   line-height: 12px;
@@ -59,6 +47,7 @@ button {
   color: #FFFFFF;
   vertical-align: middle;
 }
+
 .admin_main {
   max-width: 962px;
   width: 100%;
@@ -66,10 +55,12 @@ button {
   flex-direction: column;
   margin: 0 auto;
 }
+
 .admin_main_section {
   background-color: rgba(234, 233, 235, 0.95);
   position: relative;
 }
+
 .admin_main_section:nth-child(n+2):not(:last-child):before {
   content: "";
   position: absolute;
@@ -79,6 +70,7 @@ button {
   left: 64px;
   z-index: 2;
 }
+
 .admin_main_section:first-child:before {
   content: "";
   position: absolute;
@@ -88,12 +80,14 @@ button {
   left: 64px;
   z-index: 0;
 }
+
 .section_header {
   position: relative;
   display: flex;
   padding: 35px 42px 35px 104px;
   background-color: #63536C;
 }
+
 .section_header_text {
   display: flex;
   align-items: center;
@@ -105,6 +99,7 @@ button {
   vertical-align: middle;
   position: relative;
 }
+
 .section_header::after {
   content: "";
   background-image: url('/admin_section_after.png');
@@ -112,15 +107,17 @@ button {
   height: 16px;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute; 
+  position: absolute;
   right: 42px;
   display: inline-block;
 }
+
 .before_circle {
   display: flex;
   position: relative;
   align-items: center;
 }
+
 .section_header_text::after {
   content: "";
   width: 44px;
@@ -144,6 +141,7 @@ button {
   left: -40px;
   top: 12px;
 }
+
 .last_before::before {
   content: "";
   width: 2px;
@@ -154,6 +152,7 @@ button {
   left: -40px;
   top: -35px;
 }
+
 .section_main {
   padding-top: 35px;
   padding-left: 104px;
@@ -161,9 +160,11 @@ button {
   display: flex;
   flex-direction: column;
 }
+
 .section_price_gap {
   gap: 12px;
 }
+
 .wrapper_text {
   font-size: 16px;
   line-height: 18px;
@@ -171,6 +172,7 @@ button {
   vertical-align: middle;
   color: #000000;
 }
+
 .wrapper_button {
   padding: 11.2px 31.38px 11.9px 31.73px;
   width: 159px;
@@ -187,12 +189,14 @@ button {
   line-height: 16px;
   margin-top: 8px;
 }
+
 .hall_list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding-left: 25px;
 }
+
 .item_hall {
   font-size: 16px;
   line-height: 18px;
@@ -203,6 +207,7 @@ button {
   display: flex;
   gap: 3.84px;
 }
+
 .item_hall_button {
   width: 20px;
   height: 20px;
@@ -214,6 +219,7 @@ button {
   display: inline-flex;
   align-items: center;
 }
+
 .item_hall_button::before {
   content: "";
   background-image: url('/basket.png');
@@ -223,6 +229,7 @@ button {
   height: 12px;
   margin: 4px;
 }
+
 .configure {
   display: flex;
   flex-direction: column;
@@ -230,11 +237,13 @@ button {
   height: 72px;
   gap: 12px;
 }
+
 .configure_list {
   display: flex;
   align-items: center;
   height: 42px;
 }
+
 .configure_item_text {
   width: 81px;
   height: 42px;
@@ -251,6 +260,7 @@ button {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .active_config_item {
   width: 90px;
   height: 46px;
@@ -260,6 +270,7 @@ button {
   line-height: 16px;
   font-weight: 900;
 }
+
 .places {
   display: flex;
   flex-direction: column;
@@ -267,14 +278,17 @@ button {
   gap: 12px;
   margin-bottom: 36px;
 }
+
 .conf_step_legend {
   display: flex;
   align-items: center;
 }
+
 .conf_step_legend_label {
   display: flex;
   flex-direction: column;
 }
+
 .conf_step_legend_input {
   width: 100px;
   height: 36px;
@@ -283,6 +297,7 @@ button {
   padding: 8px 8.8px 9px 8.8px;
   background-color: #FFFFFF;
 }
+
 .conf_step_legend_label {
   font-size: 12px;
   line-height: 14px;
@@ -290,6 +305,7 @@ button {
   vertical-align: middle;
   color: #848484;
 }
+
 .conf_step_legend_x {
   font-size: 18px;
   font-weight: 400;
@@ -299,18 +315,21 @@ button {
   margin-right: 14px;
   color: #848484;
 }
+
 .hall_configuration {
   padding-bottom: 36px;
   display: flex;
   flex-direction: column;
 
 }
+
 .fieldset {
   display: flex;
   gap: 15px;
   padding-top: 17px;
   justify-content: center;
 }
+
 .fieldset_button {
   padding: 11.2px 31.39px 11.9px 31.76px;
   background-color: #FFFFFF;
@@ -326,6 +345,7 @@ button {
   text-transform: uppercase;
   color: #63536C;
 }
+
 .fieldset_input {
   padding: 11.2px 32px 11.9px 32px;
   background-color: #16A6AF;
@@ -342,12 +362,14 @@ button {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .types_chairs {
   display: flex;
   flex-direction: column;
   gap: 11px;
   margin-bottom: 9px;
 }
+
 .chair_container {
   display: flex;
   align-items: center;
@@ -358,10 +380,12 @@ button {
   color: #848484;
   font-weight: 400;
 }
+
 .chairs_info {
   display: flex;
   gap: 23px;
 }
+
 .chair {
   width: 26px;
   height: 26px;
@@ -369,16 +393,19 @@ button {
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
 }
+
 .std_chair {
   background-color: #C4C4C4;
   border: 1px solid #393939;
 }
+
 .vip_chair {
   background-color: #B0D6D8;
   border: 1px solid #0A828A;
   background-image: url("/vip_chair.png");
   background-repeat: repeat;
 }
+
 .conf_step_hall_title {
   font-size: 14px;
   line-height: 16px;
@@ -386,6 +413,7 @@ button {
   vertical-align: middle;
   color: #848484;
 }
+
 .conf_step_hall {
   max-width: 826px;
   width: 100%;
@@ -396,12 +424,14 @@ button {
   box-sizing: border-box;
   max-height: 450px;
 }
+
 .conf_step_hall_wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin: 0 auto;
 }
+
 .conf_step_hall::before {
   content: "экран";
   width: 151px;
@@ -418,25 +448,30 @@ button {
   left: 50%;
   transform: translateX(-35%);
 }
-.conf-step_row {
+
+.conf_step_row {
   display: flex;
   gap: 10px;
 }
+
 .price_type_chairs {
   display: flex;
   align-items: center;
   gap: 3px;
 }
+
 .hall_management_gap {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
+
 .price_configuration_gap {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 .price_type_chairs_container {
   display: flex;
   flex-direction: column;
@@ -444,12 +479,14 @@ button {
   width: 100px;
   height: 51px;
 }
+
 .price_chairs_label {
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
   color: #848484;
 }
+
 .price_chairs_input {
   width: 100%;
   height: 36px;
@@ -461,6 +498,7 @@ button {
   line-height: 18px;
   font-weight: 400;
 }
+
 .price_chairs_input_vip {
   width: 74%;
   height: 36px;
@@ -472,6 +510,7 @@ button {
   line-height: 18px;
   font-weight: 400;
 }
+
 .side_content {
   display: flex;
   padding-top: 20px;
@@ -482,6 +521,7 @@ button {
   font-weight: 400;
   color: #848484;
 }
+
 .add_movie {
   width: 194px;
   height: 40px;
@@ -495,9 +535,11 @@ button {
   line-height: 16px;
   font-weight: 500;
 }
+
 .add_movie_button {
   padding-top: 17px;
 }
+
 .movie_list {
   max-width: 791px;
   margin-top: 12px;
@@ -505,6 +547,7 @@ button {
   gap: 15px;
   grid-template-columns: repeat(3, 1fr);
 }
+
 .movie_info {
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -512,6 +555,7 @@ button {
   max-height: 52px;
   position: relative;
 }
+
 .movie_info_gap {
   display: flex;
   flex-direction: column;
@@ -520,42 +564,52 @@ button {
   box-sizing: border-box;
   justify-content: center;
 }
+
 .movie_info_img {
   width: 38px;
   height: 50px;
 }
+
 .movie_info_text {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
 }
+
 .movie_info_time {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.7);
 }
+
 .movie_delete {
   display: flex;
   position: absolute;
   bottom: 0;
   right: 0;
 }
+
 .back_color_one {
   background-color: #CAFF85;
 }
+
 .back_color_two {
   background-color: #85FF89;
 }
+
 .back_color_three {
   background-color: #85FFD3;
 }
+
 .back_color_four {
   background-color: #85E2FF;
 }
+
 .back_color_five {
   background-color: #8599FF;
 }
+
 .open_sale {
   width: 270px;
   height: 40px;
@@ -570,21 +624,25 @@ button {
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .open_sale_gap {
   display: flex;
   flex-direction: column;
   gap: 29px;
 }
+
 .open_sale_button_container {
   display: flex;
   justify-content: center;
   padding-right: 42px;
 }
+
 .open_sale_ready_container {
   display: flex;
   justify-content: center;
   padding-right: 42px;
 }
+
 .hall_movie_list {
   padding: 0 35px 0 35px;
   display: flex;
@@ -593,12 +651,14 @@ button {
   margin-top: 51px;
   margin-bottom: 35px;
 }
+
 .hall_movies_heading {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .seances_timeline {
   display: grid;
   grid-template-columns: repeat(1440, 1fr);
@@ -608,12 +668,12 @@ button {
   border: 1px solid #848484;
   position: relative;
   box-sizing: border-box;
-  align-items: center; 
+  align-items: center;
 }
 
 .session {
   grid-column: var(--start);
-  width: 72px; 
+  width: 72px;
   height: 40px;
   position: relative;
   display: flex;
@@ -632,7 +692,7 @@ button {
 .session::after {
   content: var(--label);
   position: absolute;
-  top: 56px; 
+  top: 56px;
   left: 0;
   transform: translateX(-50%);
   color: #848484;
@@ -654,61 +714,77 @@ button {
 
 @media (min-width: 768px) and (max-width: 896px) {
   .movie_list {
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 607px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 607px;
   }
+
   .hall_movie_list {
     max-width: 607px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 930px) {
   .conf_step_hall {
     max-width: 623px;
   }
 }
+
 @media (min-width: 320px) and (max-width: 768px) {
   .movie_list {
-  grid-template-columns: repeat(1, 1fr);
-  max-width: 328px;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 328px;
   }
+
   .movie_info {
     max-width: 260px;
   }
+
   .section_main {
     padding-left: 31px;
   }
+
   .admin_main_section:nth-child(n+2):not(:last-child):before {
     display: none;
   }
+
   .admin_main_section:first-child:before {
     display: none;
   }
+
   .section_header_text::before {
     display: none;
   }
+
   .section_header_text::after {
     width: 22px;
     height: 22px;
   }
+
   .section_header {
     padding: 20px;
     justify-content: center;
   }
+
   .section_header::after {
     right: 20px;
   }
+
   .wrapper_button {
     margin: 0 auto;
   }
+
   .hall_list {
     max-width: 219px;
   }
+
   .hall_management_gap {
     padding-bottom: 30px;
   }
+
   .chairs_info {
     flex-wrap: wrap;
   }
+
   .conf_step_hall {
     max-width: 328px;
   }

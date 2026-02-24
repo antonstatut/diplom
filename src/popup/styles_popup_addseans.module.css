@@ -1,25 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-}
-button {
-  cursor: pointer;
-}
-body {
-  background-image: 
+.body_container {
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../../public/backgroundpopup.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: 'Roboto', sans-serif;
-  max-width: 1600px;
+  height: 100%;
+  width: 100%;
   min-height: 100vh;
-  margin: 0 auto;
 }
+
 .popup_content {
   display: flex;
   flex-direction: column;
@@ -31,6 +21,7 @@ body {
   background-color: #EAE9EBF2;
   opacity: 0.95;
 }
+
 .popup_header {
   display: flex;
   align-items: center;
@@ -38,6 +29,7 @@ body {
   padding: 16px 42px 14px 42px;
   background-color: #63536C;
 }
+
 .heading {
   font-size: 22px;
   line-height: 25px;
@@ -46,6 +38,7 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
 }
+
 .close-btn {
   width: 22px;
   height: 22px;
@@ -55,15 +48,18 @@ body {
   cursor: pointer;
   outline: none;
 }
+
 .popup_close {
   width: 22px;
   height: 22px;
 }
+
 .popup_buttons {
   display: flex;
   gap: 14px;
   margin: 0 auto;
 }
+
 .popup_buttons_style {
   padding: 11.2px 32p 11.9px 32px;
   background-color: #16A6AF;
@@ -78,21 +74,24 @@ body {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
+
 .cancell {
   background-color: #FFFFFF;
   color: #63536C;
   width: 139px;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
+
 .popup_form {
- display: flex;
- flex-direction: column;
- margin: 0 auto;
- gap: 8px;
- padding-bottom: 8px;
- max-width: 750px;
- width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 8px;
+  padding-bottom: 8px;
+  max-width: 750px;
+  width: 100%;
 }
+
 .select_container {
   display: flex;
   flex-direction: column;
@@ -103,6 +102,7 @@ body {
   vertical-align: middle;
   color: #848484;
 }
+
 .input-base {
   border: 1px solid #B7B7B7;
   padding: 8px;
@@ -112,18 +112,22 @@ body {
   line-height: 100%;
   box-sizing: border-box;
 }
+
 @media (max-height: 600px) {
   .popup_content {
     margin: 66px auto;
   }
 }
+
 @media (min-width: 320px) and (max-width: 600px) {
   .popup_buttons {
     flex-direction: column;
   }
+
   .cancell {
     width: 194px;
   }
+
   .popup_content {
     margin: 223px auto;
   }

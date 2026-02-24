@@ -1,26 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
-button {
-  cursor: pointer;
-}
-.admin_login_main {
-  background-image: 
+.body_container {
+  background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('/backgroundpopup.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: 'Roboto', sans-serif;
-  max-width: 1600px;
+  height: 100%;
+  width: 100%;
   min-height: 100vh;
-  margin: 0 auto;
 }
+
 .main_container {
   display: flex;
   flex-direction: column;
@@ -28,11 +17,13 @@ button {
   width: 100%;
   margin: 0px auto;
 }
+
 .admin_header {
   padding: 35px 42px 35px 104px;
   height: 120px;
   box-sizing: border-box;
 }
+
 .header_text {
   font-size: 34px;
   line-height: 39px;
@@ -42,9 +33,11 @@ button {
   color: #FFFFFF;
   letter-spacing: 0;
 }
+
 .header_text_v {
   font-weight: 100;
 }
+
 .header_text_admin {
   font-size: 10px;
   line-height: 12px;
@@ -54,6 +47,7 @@ button {
   color: #FFFFFF;
   vertical-align: middle;
 }
+
 .admin_section {
   display: flex;
   flex-direction: column;
@@ -65,6 +59,7 @@ button {
   opacity: 0.95;
   margin: 0 auto;
 }
+
 .section_header {
   padding: 16px 104px 16px 104px;
   background-color: #63536C;
@@ -73,6 +68,7 @@ button {
   justify-content: center;
   display: flex;
 }
+
 .section_header_auth {
   font-size: 22px;
   line-height: 25px;
@@ -81,11 +77,13 @@ button {
   vertical-align: middle;
   color: #FFFFFF;
 }
+
 .form_input {
   display: flex;
   justify-content: center;
   padding: 17px 41.26px 0 41.26px;
 }
+
 .form_buttom {
   width: 189px;
   height: 40px;
@@ -102,6 +100,7 @@ button {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
 .admin_form_input {
   display: flex;
   flex-direction: column;
@@ -115,10 +114,12 @@ button {
   vertical-align: middle;
   color: #848484;
 }
+
 .admin_form_input:nth-child(2) {
   margin-top: 6px;
 }
-.input-base {
+
+.input_base {
   padding: 8px 8.8px 9px 8.8px;
   border: 1px solid #B7B7B7;
   height: 36px;
@@ -129,6 +130,7 @@ button {
   font-weight: 400;
   color: #757575;
 }
+
 @media (min-width: 320px) and (max-width: 768px) {
   .admin_header {
     height: 79px;

@@ -5,6 +5,7 @@ import ClientHall from "./client/ClientHall"
 import ClientTicket from "./client/ClientTicket"
 import AdminLogin from "./admin/AdminLogin"
 import AdminIndex from "./admin/AdminIndex"
+import './app.css'
 
 
 function App() {
