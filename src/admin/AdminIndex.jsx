@@ -292,16 +292,16 @@ export default function AdminIndex() {
                   <div className={s.hall_movies}>
                     <h3 className={s.hall_movies_heading}>Зал 1</h3>
                     <div className={s.seances_timeline}>
-                      <div className={s.session} style={{ start: "1", label: '00:00', bg: "#85FF89" }}>Миссия выполнима</div>
-                      <div className={s.session} style={{ start: "810", label: '12:00', bg: "#85FF89" }}>Миссия выполнима</div>
-                      <div className={s.session} style={{ start: "811", label: '14:00', bg: "#CAFF85" }}>Звёздные войны</div>
+                      <div className={s.session} style={{ "--start": "1", "--label": '00:00', "--bg": "#85FF89" }}>Миссия выполнима</div>
+                      <div className={s.session} style={{ "--start": "810", "--label": '12:00', "--bg": "#85FF89" }}>Миссия выполнима</div>
+                      <div className={s.session} style={{ "--start": "811", "--label": '14:00', "--bg": "#CAFF85" }}>Звёздные войны</div>
                     </div>
                   </div>
                   <div className={s.hall_movies}>
                     <h3 className={s.hall_movies_heading}>Зал 2</h3>
                     <div className={s.seances_timeline}>
-                      <div className={s.session} style={{ start: 1439, label: '19:50', bg: "#85FF89" }}>Миссия выполнима</div>
-                      <div className={s.session} style={{ start: 1440, label: '22:00', bg: "#CAFF85" }}>Звёздные войны</div>
+                      <div className={s.session} style={{ "--start": 1439, "--label": '19:50', "--bg": "#85FF89" }}>Миссия выполнима</div>
+                      <div className={s.session} style={{ "--start": 1440, "--label": '22:00', "--bg": "#CAFF85" }}>Звёздные войны</div>
                     </div>
                   </div>
                 </div>
