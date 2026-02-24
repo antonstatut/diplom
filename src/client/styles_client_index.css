@@ -7,7 +7,7 @@ a {
   color: inherit;
 }
 body {
-  background-image: url('../../public/backgrondImage.jpg');
+  background-image: url('/backgrondImage.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

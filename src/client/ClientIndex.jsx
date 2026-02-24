@@ -25,7 +25,7 @@ export default function ClientIndex() {
         <section className="Movie">
           <div className="movie_info">
             <span className="movie_poster">
-              <img src="../../public/poster1.jpg" alt="" className="poster"></img>
+              <img src={`${import.meta.env.BASE_URL}poster1.jpg`} alt="" className="poster"></img>
             </span>
             <div className="movie_description">
               <h2 className="movie_heading">Звёздные войны XXIII: Атака клонированных клонов</h2>
@@ -60,7 +60,7 @@ export default function ClientIndex() {
         <section className="Movie">
           <div className="movie_info">
             <span className="movie_poster">
-              <img src="../../public/poster2.jpg" alt="" className="poster"></img>
+              <img src={`${import.meta.env.BASE_URL}poster2.jpg`} alt="" className="poster"></img>
             </span>
             <div className="movie_description">
               <h2 className="movie_heading">Альфа</h2>
@@ -95,7 +95,7 @@ export default function ClientIndex() {
         <section className="Movie">
           <div className="movie_info">
             <span className="movie_poster">
-              <img src="../../public/poster2.jpg" alt="" className="poster"></img>
+              <img src={`${import.meta.env.BASE_URL}poster2.jpg`} alt="" className="poster"></img>
             </span>
             <div className="movie_description">
               <h2 className="movie_heading">Хищник</h2>

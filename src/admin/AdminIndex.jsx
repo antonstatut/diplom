@@ -237,7 +237,7 @@ export default function AdminIndex() {
               </div>
               <div className="movie_list">
                 <div className="movie_info back_color_one">
-                  <img src="../../public/movie_img.png" className="movie_info_img" alt="movie"></img>
+                  <img src={`${import.meta.env.BASE_URL}movie_img.png`} className="movie_info_img" alt="movie"></img>
                     <div className="movie_info_gap">
                       <p className="movie_info_text">Звёздные войны XXIII: Атака клонированных клонов</p>
                       <p className="movie_info_time" >130 минут</p>
@@ -247,7 +247,7 @@ export default function AdminIndex() {
                     </div>
                 </div>
                 <div className="movie_info back_color_two">
-                  <img src="../../public/movie_img.png" className="movie_info_img" alt="movie"></img>
+                  <img src={`${import.meta.env.BASE_URL}movie_img.png`} className="movie_info_img" alt="movie"></img>
                     <div className="movie_info_gap">
                       <p className="movie_info_text">Миссия выполнима</p>
                       <p className="movie_info_time" >120 минут</p>
@@ -257,7 +257,7 @@ export default function AdminIndex() {
                     </div>
                 </div>
                 <div className="movie_info back_color_three">
-                  <img src="../../public/movie_img.png" className="movie_info_img" alt="movie"></img>
+                  <img src={`${import.meta.env.BASE_URL}movie_img.png`} className="movie_info_img" alt="movie"></img>
                     <div className="movie_info_gap">
                       <p className="movie_info_text">Серая пантера</p>
                       <p className="movie_info_time" >90 минут</p>
@@ -267,7 +267,7 @@ export default function AdminIndex() {
                     </div>
                 </div>
                 <div className="movie_info back_color_four">
-                  <img src="../../public/movie_img.png" className="movie_info_img" alt="movie"></img>
+                  <img src={`${import.meta.env.BASE_URL}movie_img.png`} className="movie_info_img" alt="movie"></img>
                     <div className="movie_info_gap">
                       <p className="movie_info_text">Движение вбок</p>
                       <p className="movie_info_time" >95 минут</p>
@@ -277,7 +277,7 @@ export default function AdminIndex() {
                     </div>
                 </div>
                 <div className="movie_info back_color_five">
-                  <img src="../../public/movie_img.png" className="movie_info_img" alt="movie"></img>
+                  <img src={`${import.meta.env.BASE_URL}movie_img.png`} className="movie_info_img" alt="movie"></img>
                     <div className="movie_info_gap">
                       <p className="movie_info_text">Кот Да Винчи</p>
                       <p className="movie_info_time" >100 минут</p>

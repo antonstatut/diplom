@@ -20,7 +20,7 @@ export default function ClientTicket() {
           <p className="ticket_info">В зале: <span className="ticket_info_span">1</span></p>
           <p className="ticket_info">Начало сеанса: <span className="ticket_info_span">18:30</span></p>
           <div className="qrcode">
-            <img src="../../public/qrcode.png" className="img_qrcode" alt="qr code not found!"></img>
+            <img src={`${import.meta.env.BASE_URL}qrcode.png`} className="img_qrcode" alt="qr code not found!"></img>
           </div>
           <p className="ticket_hint">Покажите QR-код нашему контроллеру для подтверждения бронирования.</p>
           <p className="ticket_hint">Приятного просмотра!</p>

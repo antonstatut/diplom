@@ -17,7 +17,7 @@ button {
 .main_admin_index {
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../../public/backgroundpopup.jpg');
+    url('/backgroundpopup.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -107,7 +107,7 @@ button {
 }
 .section_header::after {
   content: "";
-  background-image: url('../../public/admin_section_after.png');
+  background-image: url('/admin_section_after.png');
   width: 24px;
   height: 16px;
   background-size: contain;
@@ -216,7 +216,7 @@ button {
 }
 .item_hall_button::before {
   content: "";
-  background-image: url('../../public/basket.png');
+  background-image: url('/basket.png');
   background-size: cover;
   position: absolute;
   width: 12px;
@@ -376,7 +376,7 @@ button {
 .vip_chair {
   background-color: #B0D6D8;
   border: 1px solid #0A828A;
-  background-image: url("../../public/vip_chair.png");
+  background-image: url("/vip_chair.png");
   background-repeat: repeat;
 }
 .conf_step_hall_title {

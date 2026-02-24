@@ -7,7 +7,7 @@ a {
   color: inherit;
 }
 body {
-  background-image: url('../../public/backgrondImage.jpg');
+  background-image: url('/backgrondImage.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,7 +50,7 @@ main {
 }
 .ticket_header::before {
   content: "";
-  background-image: url(../../public/before_ticket.png);
+  background-image: url('/before_ticket.png');
   background-repeat: repeat;
   height: 6px;
   display: block;
@@ -62,7 +62,7 @@ main {
 }
 .ticket_header::after {
   content: "";
-  background-image: url(../../public/after_ticket.png);
+  background-image: url('/after_ticket.png');
   background-repeat: repeat;
   height: 6px;
   display: block;
@@ -74,7 +74,7 @@ main {
 }
 .ticket_main::before {
   content: "";
-  background-image: url(../../public/before_ticket.png);
+  background-image: url('/before_ticket.png');
   background-repeat: repeat;
   height: 6px;
   display: block;
@@ -86,7 +86,7 @@ main {
 }
 .ticket_main::after {
   content: "";
-  background-image: url(../../public/after_ticket.png);
+  background-image: url('/after_ticket.png');
   background-repeat: repeat;
   height: 6px;
   display: block;
