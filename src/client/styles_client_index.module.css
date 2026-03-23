@@ -27,6 +27,7 @@ main {
   font-size: 14px;
   line-height: 16px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .Header {
@@ -52,38 +53,40 @@ main {
 .Nav {
   padding-bottom: 10px;
   max-width: 990px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
 .nav_list {
   list-style-type: none;
   display: flex;
-  align-items: center;
-  gap: 1px;
+  align-items: flex-end; /* Чтобы активный элемент стоял ровно по нижней линии */
+  gap: 2px;
+  width: 100%;
 }
 
 .nav_list_item {
   border-radius: 2px;
   background-color: #FFFFFF;
   height: 48px;
-  padding: 10px 30px 10px 20px;
   opacity: 0.9;
-  width: 125px;
+  /* ИСПРАВЛЕНО: Растягиваем элементы поровну на всю ширину */
+  flex: 1; 
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
-  vertical-align: middle;
   box-sizing: border-box;
   color: black;
-}
-
-.nav_list_item:nth-child(n+2) {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav_list_item_active {
-  width: 241px;
+  /* Активный день чуть шире остальных */
+  flex: 1.8; 
   height: 52px;
   opacity: 1;
   font-weight: 700;
@@ -102,29 +105,30 @@ main {
   border-radius: 2px;
   background-color: #FFFFFF;
   height: 48px;
-  padding: 10px 20px 10px 20px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0.9;
-  width: 125px;
   font-size: 24px;
-  line-height: 28px;
   font-weight: 700;
-  vertical-align: middle;
-  text-align: center;
-  box-sizing: border-box;
   color: black;
+  text-decoration: none;
 }
 
 .Main {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding-bottom: 40px;
 }
 
 .Movie {
   display: flex;
   flex-direction: column;
   max-width: 990px;
-  max-height: 350px;
+  /* ИСПРАВЛЕНО: убрали max-height, чтобы залы не обрезались */
+  height: auto; 
   background-color: #F1EBE6F2;
   border-radius: 2px;
   opacity: 0.95;
@@ -135,20 +139,12 @@ main {
 .poster {
   width: 125px;
   height: 175px;
+  object-fit: cover;
 }
 
 .movie_poster {
   position: relative;
-}
-
-.movie_poster::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 14px;
-  border-top: 14.4px;
-  border-left: 6.4px;
-  background-color: #393939;
+  flex-shrink: 0;
 }
 
 .movie_description {
@@ -160,69 +156,77 @@ main {
 
 .movie_info {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .movie_data {
   display: flex;
-  gap: 2.38px;
+  gap: 10px;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
 }
 
 .movie_heading {
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: bold;
 }
 
 .movie__synopsis {
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.4;
 }
 
 .movie_seances_hall {
   display: flex;
   flex-direction: column;
   gap: 7px;
-  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .movie_seances_heading {
   font-size: 16px;
-  line-height: 18px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .movie_time_list {
   list-style-type: none;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .movie_time_item {
   box-sizing: border-box;
-  width: 53px;
+  min-width: 60px;
   height: 33px;
   border-radius: 2px;
-  padding: 7.2px 7.33px 8.05px 8px;
+  padding: 8px;
   background-color: #FFFFFF;
   text-align: center;
+  font-size: 14px;
+  color: #000;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .nav_list_item {
-    padding: 10px;
-  }
+.movie_time_item:hover {
+  background-color: #16A6AF;
+  color: #fff;
+}
 
-  .nav_list_item_active {
-    padding: 11px;
+@media (max-width: 768px) {
+  .movie_info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-
-  .movie_poster::after {
-    background-color: #772720;
+  .movie_description {
+    padding-left: 0;
+    padding-top: 10px;
   }
 }
