@@ -1,5 +1,5 @@
 import s from './styles_client_index.module.css';
-import { Routes, Route, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 export default function ClientIndex() {
 
