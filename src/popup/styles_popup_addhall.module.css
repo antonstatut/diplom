@@ -3,14 +3,10 @@
   height: 100vh;
   width: 100vw;
   min-height: 100vh;
-  
-  border: 2px solid red;
-
   position: fixed;   /* Вырывает из потока и фиксирует на экране */
   top: 0;            /* Прижимает к верху */
   left: 0;           /* Прижимает к левому краю */
   z-index: 9999;     /* Ставит выше всех остальных элементов */
-
   display: flex;
   align-items: center; 
   justify-content: center;
