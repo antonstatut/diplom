@@ -8,14 +8,12 @@ export default function HallConfiguration({ halls, onUpdate }) {
   const [cols, setCols] = useState(0);
   const [grid, setGrid] = useState([]);
 
-  // ЭФФЕКТ: Автоматический выбор первого зала при загрузке данных
   useEffect(() => {
     if (halls && halls.length > 0 && !selectedHall) {
-      setSelectedHall(halls[0]); // Выбираем крайний слева зал
+      setSelectedHall(halls[0]);
     }
   }, [halls, selectedHall]);
 
-  // Синхронизация при изменении выбранного зала
   useEffect(() => {
     if (selectedHall) {
       const r = selectedHall.hall_rows || 0;
@@ -31,7 +29,6 @@ export default function HallConfiguration({ halls, onUpdate }) {
     }
   }, [selectedHall]);
 
-  // Изменение размеров сетки
   const handleSizeChange = (newRows, newCols) => {
     const r = Math.max(0, parseInt(newRows) || 0);
     const c = Math.max(0, parseInt(newCols) || 0);
@@ -44,7 +41,6 @@ export default function HallConfiguration({ halls, onUpdate }) {
     setGrid(newGrid);
   };
 
-  // Клик по креслу (цикл: standart -> vip -> disabled -> standart)
   const toggleChair = (rIdx, cIdx) => {
     const types = ['standart', 'vip', 'disabled'];
     const currentType = grid[rIdx][cIdx];
@@ -142,14 +138,22 @@ export default function HallConfiguration({ halls, onUpdate }) {
                 </div>
               </div>
             </div>
-            <div className={s.popup_buttons}>
-              <button className={s.wrapper_button} onClick={handleSave}>Сохранить</button>
+
+            {/* ИСПРАВЛЕННЫЙ БЛОК: кнопки по центру с оригинальными цветами */}
+            <div className={s.fieldset} style={{ display: 'flex', justifyContent: 'center', gap: '15px', marginTop: '30px' }}>
               <button 
-                className={`${s.wrapper_button} ${s.cancell}`} 
-                onClick={() => setSelectedHall(halls[0])} // Сброс к первому залу
+                className={s.fieldset_button} 
+                onClick={() => setSelectedHall(halls[0])}
               >
                 Отмена
               </button>
+              <input 
+                type="submit" 
+                className={s.fieldset_input} 
+                value="Сохранить" 
+                onClick={handleSave}
+                style={{ cursor: 'pointer' }}
+              />
             </div>
           </div>
         )}
